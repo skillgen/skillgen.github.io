@@ -136,6 +136,221 @@
     </div>
   </section>
 
+
+  <br>
+  <br>
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen is a system that trains proficient robotic agents with minimal human effort</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="column is-centered">
+                <img src="./resources/overview.png" alt="SkillGen Overview" style="border-radius: 10px; width: 100%;">
+              </div>
+              <p style="text-align: center; font-size: 18px">First, a human teleoperator first collects <strong>~3 demonstrations</strong> of the task and annotates the start and end of the skill segments, where each object interaction happens. Then, SkillGen automatically adapts these local skill demonstrations to new scenes and connects them through motion planning to <strong>generate more demonstrations</strong>. These demonstrations are used to train <strong>Hybrid Skill Policies (HSP)</strong>, agents that alternate between closed-loop reactive skills and coarse transit motions carried out by motion planning.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen integrates learned policies and planning to solve real-world manipulation tasks with just 3 human demonstrations</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted src="./resources/real_robot/Butter_Policy.mp4" width="100%" style="border-radius:20px;"></video>
+              <p style="text-align: center; font-size: 18px">SkillGen was used to generate 100 demonstrations automatically from <strong>just 3 human demonstrations</strong>. An HSP-Class agent was trained on the data and <strong>achieves 95% success rate</strong> on the Cleanup-Butter-Trash task.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen outperforms a state-of-the-art data generation system. It also achieves comparable performance to state-of-the-art imitation learning with 3% of the human data and fewer assumptions</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted src="./resources/real_robot/Coffee_Policy_with_labels_comp.mp4" width="100%" style="border-radius:20px;"></video>
+              <p style="text-align: center; font-size: 18px">On the challenging Coffee task, real-world SkillGen policies outperform those trained on <a href="https://mimicgen.github.io">MimicGen</a> (a SOTA data generation system) data (65% vs. 14%). It achieves comparable results to <a href="https://hitltamp.github.io">HITL-TAMP</a> (a SOTA imitation learning method achieving 74%) while using just 3% of the human data and making fewer assumptions.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen enables trained agents to be robust to large pose variation</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted src="./resources/real_robot/Milk_policy.mp4" width="100%" style="border-radius:20px;"></video>
+              <p style="text-align: center; font-size: 18px">An agent trained on SkillGen data achieves 95% success rate on the Pick-Place-Milk task, over a wide range of milk and bin placements.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen enables zero-shot sim-to-real transfer with 1 human demonstration provided in simulation</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted src="./resources/real_robot/NutAssemblyReal_Policy.mp4" width="100%" style="border-radius:20px;"></video>
+              <p style="text-align: center; font-size: 18px">The SkillGen simulation policy achieves 35% success rate on the challenging Nut Assembly task in the real world.</p>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim2real/human_demo.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">The single human demonstration used for SkillGen.</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim2real/datagen.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">1000 generated SkillGen demonstrations.</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim2real/policy.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">SkillGen agent evaluated in simulation.</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen can generate data in cluttered workspaces</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <!-- <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>New Reset Distributions</bold></h4> -->
+          <!-- <p style="text-align: center; font-size: 18px">In the example below, MimicGen generated 1000 demos for each of 3 reset distributions from just 10 human demos.</p> -->
+          <p style="text-align: center; font-size: 18px">SkillGen can generate data even when large obstacles that were unseen in the human-provided source demonstrations are present.</p>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/real_robot/Milk_Obstacle_Demo.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Pick-Place-Bin</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/real_robot/Butter_Obstacle_Demo.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Cleanup-Butter-Trash</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_clutter/square_D2_clutter.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Square D2 with Clutter</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_clutter/coffee_D1_clutter.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Coffee D1 with Clutter</p>
+              </div>
+            </div>
+          </div> -->
+
+        </div> 
+      </div>
+    </div>
+  </section>
+
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
