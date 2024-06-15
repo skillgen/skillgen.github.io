@@ -351,6 +351,182 @@
     </div>
   </section>
 
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen data can produce near-perfect agents across a wide variety of tasks</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <!-- <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>New Reset Distributions</bold></h4> -->
+          <!-- <p style="text-align: center; font-size: 18px">In the example below, MimicGen generated 1000 demos for each of 3 reset distributions from just 10 human demos.</p> -->
+          <p style="text-align: center; font-size: 22px">We train Hybrid Skill Policies (HSP) on SkillGen datasets. These agents learn skill initiation conditions, closed-loop skill policies, and skill termination conditions. The skills (red border) are sequenced via motion planning (blue border).</p>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_policies/square_D2.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Square D2 (94%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_policies/coffee_D2.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Coffee D2 (100%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_policies/TPA_D2.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Piece Assembly D2 (84%)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_policies/threading_D1.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Threading D1 (84%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_policies/nut_assembly_D1.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Nut Assembly D1 (78%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/sim_policies/coffee_prep_D2.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Coffee Prep D2 (84%)</p>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Agents trained on SkillGen demonstrations can be comparable to agents trained on comparable amounts of human data</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <!-- <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>New Reset Distributions</bold></h4> -->
+          <!-- <p style="text-align: center; font-size: 18px">In the example below, MimicGen generated 1000 demos for each of 3 reset distributions from just 10 human demos.</p> -->
+          <p style="text-align: center; font-size: 22px">We generate 200 SkillGen demonstrations from 10 human demonstrations and compare trained agent performance with using 200 human demonstrations. Results are similar, but SkillGen requires a small fraction of the human effort.</p>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/human_compare/threading_D1_skillgen.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Using 200 SkillGen demos generated from 10 human demos results in 36% success on Threading D1.</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/human_compare/threading_D1_human.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Using 200 human demos results in 32% success on Threading D1.</p>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Generating larger SkillGen datasets is an easy way to boost performance without human effort -- agents demonstrate strong improvement with larger SkillGen datasets</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <!-- <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>New Reset Distributions</bold></h4> -->
+          <!-- <p style="text-align: center; font-size: 18px">In the example below, MimicGen generated 1000 demos for each of 3 reset distributions from just 10 human demos.</p> -->
+          <p style="text-align: center; font-size: 22px">We compare agent performance on 200, 1000, and 5000 SkillGen demos. Agents can improve substantially when using more generated data -- Threading D1 improves from <strong>36% to 84%</strong> and Square D2 improves from <strong>4% to 72%</strong>.</p>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/human_compare/threading_D1_skillgen.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Threading D1, 200 demos, HSP-TAMP (36%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/scaling_law/threading_D1_1000.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Threading D1, 1000 demos, HSP-TAMP (72%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/scaling_law/threading_D1_5000.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Threading D1, 5000 demos, HSP-TAMP (84%)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/scaling_law/square_D2_200.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Square D2, 200 demos, HSP-Reg (4%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/scaling_law/square_D2_1000.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Square D2, 1000 demos, HSP-Reg (52%)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/scaling_law/square_D2_5000.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Square D2, 5000 demos, HSP-Reg (72%)</p>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </section>
+
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
