@@ -1,3 +1,3 @@
-# SkillGen Website
+# SkillMimicGen (SkillGen) Website
 
 Website for [SkillGen](https://skillgen.github.io/).
