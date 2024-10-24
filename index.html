@@ -78,7 +78,7 @@
                 </span>
 
                 <!-- arXiv Link. -->
-<!--                 <span class="link-block">
+                <span class="link-block">
                   <a target="_blank" href="https://skillgen.github.io"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -86,7 +86,7 @@
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span> -->
+                </span>
                 <!-- Video Link. -->
                 <!-- <span class="link-block">
                   <a target="_blank" href=""
@@ -108,15 +108,15 @@
                 </span> -->
 
                 <!-- twitter Link. -->
-<!--                 <span class="link-block">
-                  <a target="_blank" href="TODO"
+                <span class="link-block">
+                  <a target="_blank" href="https://skillgen.github.io"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-twitter"></i>
                     </span>
                     <span>Summary</span>
                   </a>
-                </span> -->
+                </span>
               </div>
   
             </div>
@@ -136,8 +136,7 @@
         <div class="column is-three-quarters">
           <div class="columns is-centered">
             <div class="column is-centered">
-              <h1 class="title is-2" style="text-align: center; padding-bottom: 10px;">SkillMimicGen (SkillGen) Overview Video</h1>
-              <video class="center" playsinline autoplay loop muted controls src="./resources/supplementary.mp4" width="100%" style="border-radius:20px;"></video>
+              <video class="center" playsinline autoplay loop muted controls src="./resources/highlights.mp4" width="100%" style="border-radius:20px;"></video>
             </div>
           </div>
         </div>
@@ -527,6 +526,50 @@
               <div class="video-container">
                 <video class="center" playsinline autoplay loop muted src="./resources/scaling_law/square_D2_5000.mp4" style="border-radius:10px;"></video>
                 <p style="text-align: center; font-size: 18px">Square D2, 5000 demos, HSP-Reg (72%)</p>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>SkillGen can generate demos for different robots</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <p style="text-align: center; font-size: 22px">Using SkillGen, we use 10 human demos on a Panda robot for each task to produce 1000 demos on a Sawyer robot.</p>
+
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/datagen/square_D1_sawyer.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Square D1 (Sawyer)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/datagen/threading_D1_sawyer.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Threading D1 (Sawyer)</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/datagen/nut_assembly_D1_sawyer.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Nut Assembly D1 (Sawyer)</p>
               </div>
             </div>
           </div>
@@ -935,6 +978,61 @@
       </div>
     </div>
   </section>
+
+  <!-- supplemental video -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <h1 class="title is-2" style="text-align: center; padding-bottom: 10px;">SkillMimicGen (SkillGen) Supplemental Video</h1>
+              <video class="center" playsinline loop muted controls src="./resources/supplementary.mp4" width="100%" style="border-radius:20px;"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{garrett2024skillmimicgen,
+    title={SkillMimicGen: Automated Demonstration Generation for Efficient Skill Learning and Deployment},
+    author={Garrett, Caelan and Mandlekar, Ajay and Wen, Bowen and Fox, Dieter},
+    booktitle={8th Annual Conference on Robot Learning},
+    year={2024}
+}</code></pre>
+    </div>
+  </section>
+
+  <section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <div class="is-vcentered interpolation-panel">
+      <div class="container content has-text-left">
+        <p style="font-size: 16px">
+          This work was made possible due to the help and support of Yashraj Narang (assistance with CAD asset design and helpful discussions), Michael Silverman, Kenneth MacLean, and Sandeep Desai (robot hardware design and support), Ravinder Singh (IT support), and Abhishek Joshi and Yuqi Xie (assistance with Omniverse rendering).
+        </p>
+      </div>
+    </div>
+  </div>  
+  </section>
+
+<!--   <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <video class="center" playsinline autoplay loop muted src="./resources/title.mp4" width="100%" style="border-radius:20px;"></video>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
 <footer class="footer">
   <div class="container">
